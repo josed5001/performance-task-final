@@ -1,0 +1,22 @@
+[gd_scene load_steps=3 format=3 uid="uid://cpqhyucnvhw0k"]
+
+[ext_resource type="Texture2D" uid="uid://clwpo83yorvtm" path="res://assets/enemy.png" id="1_i58qx"]
+
+[sub_resource type="ParticleProcessMaterial" id="ParticleProcessMaterial_5lxth"]
+lifetime_randomness = 1.0
+emission_shape = 1
+emission_sphere_radius = 1.0
+particle_flag_disable_z = true
+spread = 151.11
+flatness = 0.5
+gravity = Vector3(2.08165e-12, 1, 2.08165e-12)
+angular_velocity_max = 304.76
+orbit_velocity_min = -1000.0
+orbit_velocity_max = -473.68
+
+[node name="Enemy_particle" type="GPUParticles2D"]
+process_material = SubResource("ParticleProcessMaterial_5lxth")
+texture = ExtResource("1_i58qx")
+lifetime = 55.51
+explosiveness = 1.0
+randomness = 0.17

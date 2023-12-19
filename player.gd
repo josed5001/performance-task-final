@@ -3,6 +3,7 @@ extends Area2D
 @export var speed = 500
 @onready var bgmusic = $"../bgmusic"
 @onready var enemyhit = $"../enemyhit"
+@onready var enemy_particle = $"../enemy/Enemy_particle"
 
 func _ready():
 	bgmusic.play()
@@ -26,3 +27,4 @@ func _on_body_entered(body):
 	hide()
 	enemyhit.play()
 	bgmusic.stop()
+	enemy_particle.show()

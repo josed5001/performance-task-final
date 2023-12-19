@@ -1,0 +1,27 @@
+[gd_scene load_steps=3 format=3 uid="uid://dp8bjoatasiap"]
+
+[ext_resource type="Texture2D" uid="uid://vs551jdj25r0" path="res://assets/player.png" id="1_qcx1c"]
+
+[sub_resource type="ParticleProcessMaterial" id="ParticleProcessMaterial_mqfhf"]
+emission_shape = 2
+emission_sphere_radius = 120.0
+particle_flag_disable_z = true
+spread = 97.31
+flatness = 0.7
+gravity = Vector3(2.08165e-12, 1, 2.08165e-12)
+angular_velocity_max = 2.4
+orbit_velocity_min = 0.0
+orbit_velocity_max = 0.0
+scale_min = 0.5
+scale_max = 1.5
+anim_speed_max = 19.5
+
+[node name="PlayerParticle" type="GPUParticles2D"]
+position = Vector2(254, 43)
+amount = 5
+process_material = SubResource("ParticleProcessMaterial_mqfhf")
+texture = ExtResource("1_qcx1c")
+lifetime = 0.5
+speed_scale = 54.33
+explosiveness = 0.36
+fixed_fps = 20
